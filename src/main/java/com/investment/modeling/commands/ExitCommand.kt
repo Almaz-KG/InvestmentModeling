@@ -3,14 +3,14 @@ package main.java.com.investment.modeling.commands
 import com.investment.modeling.ConsoleInteraction
 
 class ExitCommand(val io: ConsoleInteraction) : Command(
-        arrayOf("exit", "quit"), "EXIT or QUIT \t Завершение работы программы") {
+        arrayOf("exit"), "EXIT\t Завершение работы программы") {
 
     override fun getDetailedInfo(): Array<String> {
         return arrayOf(
                 "",
                 "Завершает программу",
                 "",
-                "EXIT or QUIT [exitCode]",
+                "EXIT[exitCode]",
                 "",
                 "\t\texitCode\tКод завершения программы",
                 "")
