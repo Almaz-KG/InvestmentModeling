@@ -9,6 +9,6 @@ class HelpCommand(val io: ConsoleInteraction, val commands: ArrayList<Command>) 
 
     override fun execute(command: String) {
         for (i in 0..commands.size - 1)
-            io.printMessage("${i + 1}. ${commands.get(i).description}\n")
+            io.printMessage("${i + 1}. ${commands[i].description}\n")
     }
 }
