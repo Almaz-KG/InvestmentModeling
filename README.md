@@ -1,4 +1,4 @@
-# InvestmentModeling
+# Investment Modeling
 
 This is simple Kotlin project for modeling investments
 
