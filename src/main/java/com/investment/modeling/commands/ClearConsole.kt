@@ -1,14 +1,23 @@
 package com.investment.modeling.commands
 
 import com.investment.modeling.ConsoleInteraction
+import com.investment.modeling.langResourceProvider
 import main.java.com.investment.modeling.commands.Command
 
-class ClearConsole(val cr: ConsoleInteraction) : Command(arrayOf("clear"), "CLEAR\t Очистка экрана"){
+class ClearConsole(val consoleInteraction: ConsoleInteraction) : Command(
+                langResourceProvider.getText("command.clear-console.command-enter"),
+                langResourceProvider.getText("command.clear-console.command") + "\t" +
+                langResourceProvider.getText("command.clear-console.info-short")){
+
     override fun getDetailedInfo(): Array<String> {
-        return arrayOf("", "Очищает содержимое экрана", "", "CLEAR", "")
+        return arrayOf("",
+                langResourceProvider.getText("command.clear-console.info"),
+                "",
+                langResourceProvider.getText("command.clear-console.command"),
+                "")
     }
 
     override fun execute(args: List<String>) {
-        cr.clearConsole()
+        consoleInteraction.clearConsole()
     }
 }

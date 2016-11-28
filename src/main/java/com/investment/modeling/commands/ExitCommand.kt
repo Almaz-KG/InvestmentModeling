@@ -1,24 +1,33 @@
 package main.java.com.investment.modeling.commands
 
 import com.investment.modeling.ConsoleInteraction
+import com.investment.modeling.langResourceProvider
 
-class ExitCommand(val io: ConsoleInteraction) : Command(
-        arrayOf("exit"), "EXIT\t Завершение работы программы") {
+class ExitCommand(val consoleInteraction: ConsoleInteraction) : Command(
+        langResourceProvider.getText("command.exit.command-enter"),
+        langResourceProvider.getText("command.exit.command") + "\t" +
+                langResourceProvider.getText("command.exit.info")) {
 
     override fun getDetailedInfo(): Array<String> {
         return arrayOf(
                 "",
-                "Завершает программу",
+                langResourceProvider.getText("command.exit.info-short"),
                 "",
-                "EXIT[exitCode]",
+                langResourceProvider.getText("command.exit.command"),
+                        "[" +
+                            langResourceProvider.getText("command.exit.exit-code")+
+                        "]",
                 "",
-                "\t\texitCode\tКод завершения программы",
+                "\t\t" +
+                        langResourceProvider.getText("command.exit.exit-code")+
+                        "\t" +
+                        langResourceProvider.getText("command.exit.exit-code-desc")+
                 "")
 
     }
 
     override fun execute(args: List<String>) {
-        io.printMessage("Работа программы завершена. Благодарим за использование!")
+        consoleInteraction.printMessage(langResourceProvider.getText("command.exit.info.goal"))
         if(args.size == 1){
             System.exit(0)
         } else{

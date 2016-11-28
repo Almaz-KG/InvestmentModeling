@@ -3,37 +3,44 @@ package com.investment.modeling.commands
 import com.investment.modeling.ConsoleInteraction
 import com.investment.modeling.Investment
 import com.investment.modeling.imr
+import com.investment.modeling.langResourceProvider
 import main.java.com.investment.modeling.commands.Command
 
-class ShowCommand(val ci: ConsoleInteraction) : Command(
-        arrayOf("show"),
-        "SHOW\t\t Показать детальную информацию параметре"){
+class ShowCommand(val consoleInteraction: ConsoleInteraction) : Command(
+        langResourceProvider.getText("command.show.command-enter"),
+        langResourceProvider.getText("command.show.command") +
+                "\t\t " +
+                langResourceProvider.getText("command.show.info")){
 
     override fun getDetailedInfo(): Array<String> {
         return arrayOf(
                 "",
-                "Отображает детализированную информацию",
+                langResourceProvider.getText("command.show.investment.open.list"),
                 "",
-                "SHOW",
-                "\t\tДетализированная информация об аккаунте",
+                langResourceProvider.getText("command.show.command"),
+                "\t\t " +
+                        langResourceProvider.getText("command.show.info.detailed"),
                 "",
-                "SHOW INVESTMENT",
+                langResourceProvider.getText("command.show.investment.short"),
                 "",
-                "\t\tОтображает список всех открытых инвестиций",
+                "\t\t " +
+                        langResourceProvider.getText("command.show.investment.open.list"),
                 "")
     }
 
     override fun execute(args: List<String>) {
         if(args.size == 0)
-            throw IllegalArgumentException("Unknown command")
-        if(false == "show".equals(args[0].toLowerCase()))
-            throw IllegalArgumentException("Illegal command ${args[0]}")
+            throw IllegalArgumentException(langResourceProvider.getText("command.show.error.unknown-command"))
+        if(false == "${langResourceProvider.getText("command.show.command-enter")}".equals(args[0].toLowerCase()))
+            throw IllegalArgumentException("${langResourceProvider.getText("command.show.error.illegal-argument-command")} " +
+                    "${args[0]}")
 
         if(args.size == 1)
             printAccountInfo()
         else {
-            if(false == "investment".equals(args[1].toLowerCase())){
-                ci.printlnMessage("Illegal command argument ${args[0]}")
+            if(false == "${langResourceProvider.getText("command.show.investment")}".equals(args[1].toLowerCase())){
+                consoleInteraction.printlnMessage("${langResourceProvider.getText("command.show.error.illegal-command-argument")} " +
+                        "${args[0]}")
                 return
             }
             printInvestmentInfo()
@@ -43,20 +50,21 @@ class ShowCommand(val ci: ConsoleInteraction) : Command(
     private fun printInvestmentInfo() {
         val list = imr!!.account.currentInvestmentList
         if(list.size == 0){
-            ci.printlnMessage("Активных инвестиций нет")
+            consoleInteraction.printlnMessage(langResourceProvider.getText("command.show.investment.info.no-open-investments"))
             return
         } else{
-            val column = arrayListOf("ID",
-                                     "Акция",
-                                     "Начало",
-                                     "Конец",
-                                     "Прибыль",
-                                     "Убыток",
-                                     "Сумма",
-                                     "")
+            val column = arrayListOf(
+                    langResourceProvider.getText("command.show.investment.id"),
+                    langResourceProvider.getText("command.show.investment.share"),
+                    langResourceProvider.getText("command.show.investment.start"),
+                    langResourceProvider.getText("command.show.investment.end"),
+                    langResourceProvider.getText("command.show.investment.revenue"),
+                    langResourceProvider.getText("command.show.investment.loss"),
+                    langResourceProvider.getText("command.show.investment.balance"),
+                    "")
             list.forEach { e -> (column.addAll(getValuesList(e))) }
 
-            ci.printColumns(column)
+            consoleInteraction.printColumns(column)
         }
     }
 
@@ -73,6 +81,6 @@ class ShowCommand(val ci: ConsoleInteraction) : Command(
     }
 
     private fun printAccountInfo() {
-        ci.printlnMessage(imr!!.account.toString())
+        consoleInteraction.printlnMessage(imr!!.account.toString())
     }
 }

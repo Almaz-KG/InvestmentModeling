@@ -1,0 +1,99 @@
+welcome-message = Добро пожаловать в Investment Modeling v.0.0.1
+program-info-1 = Эта программа моделирует состояние инвестиционного
+program-info-2 = портфеля в зависимости от действий инвестора
+enter-your-name = Введите Ваше имя
+initial-capital = Базовый капиталл составляет
+how-money-every-month = Сколько ежемесячно Вы можете инвестировать в портфель
+
+investment.tools.error.unable-find-tool = Не могу найти инструмент с ИД
+
+investment-opportunity.investment = Инвестиция
+investment-opportunity.max-revenue = Максимальная прибыль
+investment-opportunity.max-loss = Максимальный убыток
+investment-opportunity.duration = Длительность
+investment-opportunity.time-period = месяцев
+investment.investment = Инвестиция
+investment.id = ИД
+investment.share = Акция
+investment.start = Начало
+investment.end = Конец
+investment.revenue = Прибыль
+investment.loss = Убыток
+investment.balance = Баланс
+
+console.interaction.cannot-convert = Не удается сконвертировать в целое число
+console.interaction.whole-number = (целое число)
+
+account.account = Счет
+account.owner = Владелец
+account.balance = Баланс
+account.investment-count = Количество инвестиций
+
+command.clear-console.command-enter = clear
+command.clear-console.command = CLEAR
+command.clear-console.info-short = Очистка экрана
+command.clear-console.info = Очищает содержимое экрана
+
+command.exit.info.goal = Работа программы завершена. Благодарим за использование!
+command.exit.command-enter = exit
+command.exit.command = EXIT
+command.exit.exit-code = exitCode
+command.exit.exit-code-desc = Код завершения программы
+command.exit.info-short = Завершает программу
+command.exit.info = Завершение работы программы
+
+command.help.command-enter = help
+command.help.command = HELP
+command.help.info = Выводит справочную информацию о командах
+command.help.detailed.m1 = Вывод справочных сведений о командах
+command.help.detailed.m2 = отображение списка всех доступных команд
+command.help.detailed.m3 = <команда>
+command.help.detailed.m4 = команда, интересующая пользователя
+command.help.error.unknown-command = Unknown command
+command.help.error.illegal-argument-command = Illegal command
+command.help.error.unsupported-command = Данная команда не поддерживается
+
+command.show.command-enter = show
+command.show.command = SHOW
+command.show.info = Показать детальную информацию параметре
+command.show.info.1 = Отображает детализированную информацию
+command.show.info.detailed = Детализированная информация об аккаунте
+command.show.investment.short = SHOW INVESTMENT
+command.show.investment.open.list = Отображает список всех открытых инвестиций
+command.show.error.unknown-command = Unknown command
+command.show.error.illegal-argument-command = Illegal command
+command.show.error.illegal-command-argument = Illegal command argument
+command.show.investment = investment
+command.show.investment.id= ИД
+command.show.investment.share = Акция
+command.show.investment.start = Начало
+command.show.investment.end = Конец
+command.show.investment.revenue = Прибыль
+command.show.investment.loss = Убыток
+command.show.investment.balance = Сумма
+command.show.investment.info.no-open-investments = Активных инвестиций нет
+
+modeling.runner.start = Начинаю процесс моделирования
+modeling.runner.month = Месяц
+modeling.runner.do-invest = Инвестировать?
+modeling.runner.part-of-investments = Какую часть инвестировать (в % от свободного баланса, не более 100%)
+modeling.runner.invest-success = Инвестиция успешно заключена
+modeling.runner.invest-rejected-wrong-part = Инвестиция отклонена: Неправильно введена часть от баланса для инвестиций
+modeling.runner.invest-rejected-no-free-money = Инвестиция отклонена: Недостаточно свободных средств
+modeling.runner.invest-rejected-by-investor = Инвестиция отклонена инвестором
+modeling.runner.finished = Симуляция завершена
+modeling.runner.invest.start-balance = Базовый капиталл
+modeling.runner.invest.total-money-added = Всего доинвестировано
+modeling.runner.invest.finish-balance = Конечный капиталл
+modeling.runner.invest.average-year-revenue = Средняя ежегодная прибыль
+modeling.runner.invest.total-investments = Всего инвестиций
+modeling.runner.invest.closed-by-result = Инвестиция закрыта с результатом
+modeling.runner.positive-answer-contains = дауes1
+
+
+
+
+
+
+
+
