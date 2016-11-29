@@ -1,0 +1,91 @@
+welcome-message = Welcome to Investment Modeling v.0.0.1
+program-info-1 = This program simulates investments portfolio health
+program-info-2 = depending by investor behaviour
+enter-your-name = Please, enter your name
+initial-capital = Please, enter initial balance
+how-money-every-month = How much each month, you can invest in a portfolio
+
+investment.tools.error.unable-find-tool = Can't find investment tool with ID
+
+investment-opportunity.investment = Investment
+investment-opportunity.max-revenue = Max revenue
+investment-opportunity.max-loss = Max loss
+investment-opportunity.duration = Duration
+investment-opportunity.time-period = month
+investment.investment = Investment
+investment.id = ID
+investment.share = Share
+investment.start = Start
+investment.end = End
+investment.revenue = Revenue
+investment.loss = Loss
+investment.balance = Balance
+
+console.interaction.cannot-convert = Can't convert to whole number
+console.interaction.whole-number = (whole number)
+
+account.account = Account
+account.owner = Owner
+account.balance = Balance
+account.investment-count = Investments count
+
+command.clear-console.command-enter = clear
+command.clear-console.command = CLEAR
+command.clear-console.info-short = Clear screen
+command.clear-console.info = Clears the contents of the screen
+
+command.exit.info.goal = The work of program is completed. Thank you for using!
+command.exit.command-enter = exit
+command.exit.command = EXIT
+command.exit.exit-code = exitCode
+command.exit.exit-code-desc = Code completion of the program
+command.exit.info-short = Rounding out the program
+command.exit.info = Completion of the program
+
+command.help.command-enter = help
+command.help.command = HELP
+command.help.info = Displays help information about commands
+command.help.detailed.m1 = Displays help about commands
+command.help.detailed.m2 = display a list of all available commands
+command.help.detailed.m3 = <command>
+command.help.detailed.m4 = command, entered by user
+command.help.error.unknown-command = Unknown command
+command.help.error.illegal-argument-command = Illegal command
+command.help.error.unsupported-command = Command is not supported
+
+command.show.command-enter = show
+command.show.command = SHOW
+command.show.info = Show details option
+command.show.info.1 = Displays detailed information
+command.show.info.detailed = Detailed account Information
+command.show.investment.short = SHOW INVESTMENT
+command.show.investment.open.list = Display a list of all active investments
+command.show.error.unknown-command = Unknown command
+command.show.error.illegal-argument-command = Illegal command
+command.show.error.illegal-command-argument = Illegal command argument
+command.show.investment = investment
+command.show.investment.id= ID
+command.show.investment.share = Share
+command.show.investment.start = Start
+command.show.investment.end = End
+command.show.investment.revenue = Revenue
+command.show.investment.loss = Loss
+command.show.investment.balance = Balance
+command.show.investment.info.no-open-investments = No active investments
+
+modeling.runner.start = Begin the process of modeling
+modeling.runner.month = Month
+modeling.runner.do-invest = Do invest?
+modeling.runner.part-of-investments = What part of the investment (in % from the free balance, no more than 100%)
+modeling.runner.invest-success = Investing successfully performed
+modeling.runner.invest-rejected-wrong-part = Investment rejected: Incorrectly entered part of the balance sheet for investment
+modeling.runner.invest-rejected-no-free-money = Investment rejected: No free balance
+modeling.runner.invest-rejected-by-investor = Investment rejected by investor
+modeling.runner.finished = Simulation finished
+modeling.runner.invest.start-balance = Start balance
+modeling.runner.invest.total-money-added = Total invested
+modeling.runner.invest.finish-balance = The final capital
+modeling.runner.invest.average-year-revenue = The average annual income
+modeling.runner.invest.total-investments = Total investments
+modeling.runner.invest.closed-by-result = The investment closed with result
+modeling.runner.positive-answer-contains = дауes1
