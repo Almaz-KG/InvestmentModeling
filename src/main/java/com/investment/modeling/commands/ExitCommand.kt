@@ -5,7 +5,7 @@ import com.investment.modeling.langResourceProvider
 
 class ExitCommand(val consoleInteraction: ConsoleInteraction) : Command(
         langResourceProvider.getText("command.exit.command-enter"),
-        langResourceProvider.getText("command.exit.command") + "\t" +
+        langResourceProvider.getText("command.exit.command") + "\t\t" +
                 langResourceProvider.getText("command.exit.info")) {
 
     override fun getDetailedInfo(): Array<String> {
@@ -13,10 +13,9 @@ class ExitCommand(val consoleInteraction: ConsoleInteraction) : Command(
                 "",
                 langResourceProvider.getText("command.exit.info-short"),
                 "",
-                langResourceProvider.getText("command.exit.command"),
-                        "[" +
-                            langResourceProvider.getText("command.exit.exit-code")+
-                        "]",
+                langResourceProvider.getText("command.exit.command")+
+                        "  " +
+                            langResourceProvider.getText("command.exit.exit-code"),
                 "",
                 "\t\t" +
                         langResourceProvider.getText("command.exit.exit-code")+

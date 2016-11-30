@@ -9,7 +9,7 @@ import main.java.com.investment.modeling.commands.Command
 class ShowCommand(val consoleInteraction: ConsoleInteraction) : Command(
         langResourceProvider.getText("command.show.command-enter"),
         langResourceProvider.getText("command.show.command") +
-                "\t\t " +
+                "\t\t" +
                 langResourceProvider.getText("command.show.info")){
 
     override fun getDetailedInfo(): Array<String> {

@@ -88,4 +88,23 @@ modeling.runner.invest.finish-balance = The final capital
 modeling.runner.invest.average-year-revenue = The average annual income
 modeling.runner.invest.total-investments = Total investments
 modeling.runner.invest.closed-by-result = The investment closed with result
-modeling.runner.positive-answer-contains = дауes1
+modeling.runner.positive-answer-contains = уes
+
+command.set.command-enter = set
+command.set.command = SET
+command.set.info-short = Set property
+command.set.info = Setting property value
+command.set.command.argument = <property> <value>
+command.set.illegal-argument-command = Illegal command
+command.set.error.unknown-command = Unknown command
+command.set.error.property-not-find = Property not find
+
+command.set.lang.command-enter = lang
+command.set.lang.command = LANG
+command.set.lang.command.argument = <language>
+command.set.lang.successfully-changed = Language successfully changed to ENG
+command.set.lang.info = Setting language value
+command.set.lang.exception.illegal-argument =
+command.set.lang.exception.illegal-arguments =
+
+languages.error.unsupported-language-exception =

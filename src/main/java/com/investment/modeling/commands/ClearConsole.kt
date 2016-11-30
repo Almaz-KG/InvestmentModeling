@@ -6,7 +6,7 @@ import main.java.com.investment.modeling.commands.Command
 
 class ClearConsole(val consoleInteraction: ConsoleInteraction) : Command(
                 langResourceProvider.getText("command.clear-console.command-enter"),
-                langResourceProvider.getText("command.clear-console.command") + "\t" +
+                langResourceProvider.getText("command.clear-console.command") + "\t\t" +
                 langResourceProvider.getText("command.clear-console.info-short")){
 
     override fun getDetailedInfo(): Array<String> {

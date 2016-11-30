@@ -37,7 +37,7 @@ command.clear-console.info = Очищает содержимое экрана
 command.exit.info.goal = Работа программы завершена. Благодарим за использование!
 command.exit.command-enter = exit
 command.exit.command = EXIT
-command.exit.exit-code = exitCode
+command.exit.exit-code = <exitCode>
 command.exit.exit-code-desc = Код завершения программы
 command.exit.info-short = Завершает программу
 command.exit.info = Завершение работы программы
@@ -73,6 +73,25 @@ command.show.investment.loss = Убыток
 command.show.investment.balance = Сумма
 command.show.investment.info.no-open-investments = Активных инвестиций нет
 
+command.set.command-enter = set
+command.set.command = SET
+command.set.info-short = Установка свойств
+command.set.info = Устанавливает значение свойства
+command.set.command.argument = <свойство> <значение>
+command.set.illegal-argument-command = Illegal command
+command.set.error.unknown-command = Не опознанная команда
+command.set.error.property-not-find = Свойство не найдено
+
+command.set.lang.command-enter = lang
+command.set.lang.command = LANG
+command.set.lang.command.argument = <язык>
+command.set.lang.successfully-changed = Язык успешно изменен на RUS
+command.set.lang.info = Устанавливает значение свойства
+command.set.lang.exception.illegal-argument =
+command.set.lang.exception.illegal-arguments =
+
+languages.error.unsupported-language-exception =
+
 modeling.runner.start = Начинаю процесс моделирования
 modeling.runner.month = Месяц
 modeling.runner.do-invest = Инвестировать?
@@ -88,7 +107,7 @@ modeling.runner.invest.finish-balance = Конечный капиталл
 modeling.runner.invest.average-year-revenue = Средняя ежегодная прибыль
 modeling.runner.invest.total-investments = Всего инвестиций
 modeling.runner.invest.closed-by-result = Инвестиция закрыта с результатом
-modeling.runner.positive-answer-contains = дауes1
+modeling.runner.positive-answer-contains = да
 
 
 
