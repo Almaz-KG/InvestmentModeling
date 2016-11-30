@@ -88,7 +88,7 @@ modeling.runner.invest.finish-balance = The final capital
 modeling.runner.invest.average-year-revenue = The average annual income
 modeling.runner.invest.total-investments = Total investments
 modeling.runner.invest.closed-by-result = The investment closed with result
-modeling.runner.positive-answer-contains = уes
+modeling.runner.positive-answer-contains = yes
 
 command.set.command-enter = set
 command.set.command = SET
